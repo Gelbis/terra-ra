@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Planeta Terra em RA</title>
+
+  <script type="module"
+    src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+  </script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f2f2f2;
+    }
+
+    model-viewer {
+      width: 100vw;
+      height: 85vh;
+      background: #ffffff;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Planeta Terra em Realidade Aumentada</h2>
+
+  <model-viewer
+    src="terragira.glb"
+    alt="Modelo 3D do planeta Terra"
+    camera-controls
+    auto-rotate
+    autoplay
+    ar
+    ar-modes="webxr scene-viewer quick-look">
+  </model-viewer>
+
+  <p>Toque no botão de RA para visualizar no ambiente.</p>
+
+</body>
+</html>
